@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+
+    <!-- TAilwind & DaisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Custome style -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .manrope-font {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="manrope-font">
+
+    <header class="max-w-6xl mx-auto mt-16">
+
+        <!-- Hero Daisy -->
+        <div class="hero">
+            <div class="hero-content flex-col lg:flex-row">
+
+                <div>
+                    <h1 class="text-7xl manrope-font font-extrabold text-[#1C1C1C]">
+                        It's good<br>
+                        tea time at The<br>
+                        Tea House</h1>
+                    <p class="py-4 text-[#777] text-lg font-medium font-manrope">Provident cupiditate voluptatem et in.
+                        Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn btn-primary">Explore More</button>
+                </div>
+
+                <div>
+                    <img src="./images/banner.png" class="max-w-sm" />
+                    <div class="flex gap-3 drop-shadow-lg bg-[#FFF] mx-w-[255px] -mt-16 -ml-[45px] p-5">
+                        <img src="./images/Group 5.svg" alt="">
+                        <div>
+                            <h4 class="manrope-font text-3xl font-extrabold text-[#1C1C1C]">5.00</h4>
+                            <p class="manrope-font font-semibold text-[#777]">Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <main class="max-w-6xl mx-auto my-24">
+
+        <!-- Feathered Products -->
+        <section class="text-center">
+            <h3 class="text-[#1C1C1C] text-5xl manrope-font font-extrabold mb-5">Our Featured Products</h3>
+            <p class="text-[#777] text-base font-medium max-w-4xl m-auto mb-11">There are many variations of passages of
+                Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or
+                randomised words which don't look even slightly believable. </p>
+
+            <div>
+
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="./images/tea-1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title text-[#1C1C1C] text-2xl font-extrabold">Milk Tea</h2>
+                        <p class="text-[#777] text-base font-semibold">Creamer could be replaced by fresh milk</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>
