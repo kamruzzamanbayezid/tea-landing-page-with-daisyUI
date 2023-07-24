@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tea House</title>
 
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b48c8e7d0f.js" crossorigin="anonymous"></script>
+
   <!-- TAilwind & DaisyUI link -->
   <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -22,7 +25,8 @@
       theme: {
         extend: {
           colors: {
-            clifford: "#da373d",
+            'gradient-start': '#F00',
+            'gradient-end': '#FF8938',
           },
         },
       },
@@ -56,8 +60,8 @@
         </div>
 
         <div>
-          <img src="./images/banner.png" class="max-w-sm" />
-          <div class="flex gap-3 drop-shadow-lg bg-[#FFF] max-w-[250px] -mt-16 -ml-[45px] p-5">
+          <img src="./images/banner.png" class="max-w-md" />
+          <div class="flex gap-3 drop-shadow-lg bg-[#FFF] max-w-[250px] -mt-16 -ml-[0px] p-5 rounded-lg">
             <img src="./images/Group 5.svg" alt="" />
             <div>
               <h4 class="manrope-font text-3xl font-extrabold text-[#1C1C1C]">
@@ -235,9 +239,111 @@
       </div>
 
     </section>
+
+    <!-- News & Events Section -->
+    <section class="text-center">
+      <h3 class="text-[#1C1C1C] text-5xl font-extrabold mb-5">News & Events</h3>
+      <p class="text-[#777] font-medium mb-12">There are many variations of passages of Lorem Ipsum available, but the
+        majority have suffered alteration in some form,<br>by injected humour, or randomised words which don't look even
+        slightly believable. </p>
+
+      <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        <div class="card card-compact bg-base-100 shadow-xl pt-5">
+          <figure><img src="./images/news-1.png" alt="Shoes" /></figure>
+          <div class="card-body ml-4">
+            <p class="text-[#777] font-medium text-start">Feb 05, 2027</p>
+            <h2 class="card-title text-[#1C1C1C] font-extrabold text-xl">Collecting 8 points for discount</h2>
+            <p class="text-start mb-2">There are many variations of passages of Lorem Ipsum available.</p>
+            <a class="text-start text-[#1C1C1C] font-bold" href="">Learn More</a>
+          </div>
+        </div>
+
+        <div class="card card-compact bg-base-100 shadow-xl pt-5">
+          <figure><img src="./images/news-2.png" alt="Shoes" /></figure>
+          <div class="card-body ml-4">
+            <p class="text-[#777] font-medium text-start">Feb 05, 2027</p>
+            <h2 class="card-title text-[#1C1C1C] font-extrabold text-xl">Collecting 8 points for discount</h2>
+            <p class="text-start mb-2">There are many variations of passages of Lorem Ipsum available.</p>
+            <a class="text-start text-[#1C1C1C] font-bold" href="">Learn More</a>
+          </div>
+        </div>
+
+        <div class="card card-compact bg-base-100 shadow-xl pt-5">
+          <figure><img src="./images/news-3.png" alt="Shoes" /></figure>
+          <div class="card-body ml-4">
+            <p class="text-[#777] font-medium text-start">Feb 05, 2027</p>
+            <h2 class="card-title text-[#1C1C1C] font-extrabold text-xl">Collecting 8 points for discount</h2>
+            <p class="text-start mb-2">There are many variations of passages of Lorem Ipsum available.</p>
+            <a class="text-start text-[#1C1C1C] font-bold" href="">Learn More</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
   </main>
-  <footer>
+
+
+
+
+  <footer class="py-32 bg-gradient-to-r from-[#ff00001a] to-[#ff89381a]">
+
+    <div class="max-w-6xl mx-auto ">
+      <div class="mb-24 flex flex-col lg:flex-row justify-between">
+        <img src="./images/cup.png" alt="" class="w-16">
+        <div>
+          <span>Ready to get strated?</span>
+          <button class="lg:ml-10 btn btn-primary bg-gradient-to-r from-gradient-start to-gradient-end border-none">Get Started</button>
+        </div>
+      </div>
+
+      <div class="footer text-base-content">
+        <div>
+          <span class="footer-title text-[#1C1C1C] font-semibold text-xl">Quick Links</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+
+        <div>
+          <span class="footer-title tex-t[#1C1C1C] font-semibold text-xl">Our Services</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+
+        <div>
+          <span class="footer-title text-[#1C1C1C] font-semibold text-xl">Help</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+        </div>
+
+        <div>
+          <span class="footer-title text-[#1C1C1C] font-semibold text-xl">Subscribe to our newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Email address</span>
+            </label>
+            <div class="relative">
+              <input type="text" class=" bg-transparent border-b-2 border-[#494949] w-72 lg:pr-16" />
+              <button
+                class="btn bg-gradient-to-r from-gradient-start to-gradient-end w-4 h-4 absolute -top-10 -right-0 rounded-full"><i
+                  class="fa-solid fa-angle-right"></i></button>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-24"><h4>© 2027 UIDesign.to - All rights reserved.</h4></div>
+    </div>
+
   </footer>
+
+
 </body>
 
 </html>
