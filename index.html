@@ -60,7 +60,7 @@
         </div>
 
         <div>
-          <img src="./images/banner.png" class="max-w-md" />
+          <img src="./images/banner.png"/>
           <div class="flex gap-3 drop-shadow-lg bg-[#FFF] max-w-[250px] -mt-16 -ml-[0px] p-5 rounded-lg">
             <img src="./images/Group 5.svg" alt="" />
             <div>
@@ -284,10 +284,19 @@
   </main>
 
   <!-- Footer Section -->
-  <footer class="bg-gradient-to-r from-[#ff00001a] to-[#ff89381a] p-5 lg:pl-32 my-24">
-    <div>
+  <footer class="bg-base-200 text-base-content">
 
-      <div class="footer text-based-content">
+    <div class="max-w-6xl mx-auto mt-16">
+      <div class="mb-20 flex justify-between">
+        <img src="./images/cup.png" alt="">
+        <p>
+          <span>Ready to get strated?</span>
+          <button class="btn btn-primary">Get Started</button>
+        </p>
+      </div>
+
+      <div class="footer lg:gap-40">
+
         <div>
           <span class="footer-title">Services</span>
           <a class="link link-hover">Branding</a>
@@ -312,19 +321,20 @@
           <span class="footer-title">Newsletter</span>
           <div class="form-control w-80">
             <label class="label">
-              <span class="label-text">Email address</span>
+              <span class="label-text">Enter your email address</span>
             </label>
             <div class="relative">
-              <input type="text" class="border-b-2 border-black pr-16 bg-transparent" />
-              <button class="absolute -top-3 right-20 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end w-4 h-4 flex justify-center items-center p-3">
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
+              <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
+              <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
             </div>
           </div>
         </div>
+
       </div>
 
+      <div></div>
     </div>
+
   </footer>
 
 
